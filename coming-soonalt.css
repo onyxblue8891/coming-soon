@@ -1,0 +1,157 @@
+  /*
+https://assets.codepen.io/6060109/waves.png
+https://assets.codepen.io/6060109/shoes.png
+https://assets.codepen.io/6060109/mobile-shoes.jpg
+https://cssgradient.io/
+› for the button on email signup
+  */
+  @font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  *{
+
+    font-family: 'AdiHaus';
+  }
+
+  body{
+    width: 100vw;
+    height: fit-content;
+    background: #f2f2f2 url("https://assets.codepen.io/6060109/waves.png") repeat right top;
+    background-size:cover;
+  }
+
+  #page-container{
+    max-width: 400px;
+    min-width: 300px;
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin: 25px auto;
+    text-align: center;
+  }
+
+  #company-logo{
+    display: block;
+    margin: auto;
+  }
+
+  #shoes-img{
+    height: 300px;
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  #we-are{
+    color: #2F80ED;
+    font-weight: 400;
+  }
+
+  #coming-soon{
+    font-weight: 800;
+    font-size: 35px;
+  }
+
+  p{
+    margin: 25px auto;
+    font-size: 15px;
+    line-height: 25px;
+    width: 70%;
+  }
+
+  .signup{
+    margin: 25px auto;
+  }
+
+  .signup input{
+    color: #333333;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    opacity: 0.5;
+    padding: 9px;
+}
+
+#email-address{
+      border-right: none;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 0px;
+
+  }
+
+  #email-button{
+    opacity: 0.9;
+    border-left: none;
+    margin-left: -10px;
+    width: 50px;
+    color: white;
+    background: rgb(119,119,119);
+    background: linear-gradient(90deg, rgba(119,119,119,1) 0%, rgba(43,40,40,1) 100%);
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+    #shoes-img{
+      display: none;
+    }
+    
+    #page-container{
+      max-width: 1200px;
+      min-width: 800px;
+      width: 100%;
+      text-align: left;
+      display: inline-flex;
+      margin: 25px 50px;
+    }
+
+    #left-container{
+      width: 50%;
+      display: inline;
+      margin-left: 100px;
+
+    }
+
+    #company-logo{
+      margin: 20px 0 50px 0;
+      width: 80px;
+      height: 60px;
+    }
+
+    #we-are{
+      margin-top: 50px;
+      margin-bottom: -25px;
+    }
+
+    #coming-soon{
+      font-size: 40px;
+      margin-bottom: 50px;
+    }
+
+    p{
+      margin-left: 0;
+      margin-top: -15px;
+    }
+
+    .signup{
+      margin-top: 30px;
+    }
+
+    #email-address{
+      width: 250px;
+    }
+
+    #right-container{
+      width: 50%;
+      height: 100vh;
+      background: #f2f2f2 url("https://assets.codepen.io/6060109/shoes.png") no-repeat right top;
+      background-size: cover;
+    }
+}

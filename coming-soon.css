@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  /*
+https://assets.codepen.io/6060109/waves.png
+https://assets.codepen.io/6060109/shoes.png
+https://assets.codepen.io/6060109/mobile-shoes.jpg
+https://cssgradient.io/
+› for the button on email signup
+  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    min-width: 100%;
+    min-height: 100%;
+    font-family: "AdiHaus";
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+#page-container{
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#left-container{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#athletic-woman{
+    padding-top: 25px;
+    width: 100%;
+    height: 325px;
+}
+
+#we-are{
+    color: #CD3A24;
+    font-weight: 400;
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 42px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#coming-soon{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #423A3A;
+    text-transform: uppercase;
+
+}
+
+p{
+    width: 80%;
+    height: 75px;
+    padding: 10px 10%;
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.signup{
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.signup > input{
+    color: #333333;
+    border: 1px solid #333333;
+    border-right: none;
+    border-radius: 3px;
+    opacity: 0.5;
+    padding: 9px;
+}
+
+#email-address{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#email-button{
+    opacity: 0.75;
+    background-color: #000000;
+    color: white;
+    margin-left: -7px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 875px) {
+    body{
+        text-align: left;
+    }
+    #page-container{
+        max-width: 1100px;
+        height: 88vh;
+        background: #ffffff url("https://assets.codepen.io/6060109/destop-bg.png") no-repeat right bottom;
+        display: inline-flex;
+        margin: 25px auto;
+    }
+
+    #athletic-woman{
+        display: none;
+    }
+
+    #left-container{
+        justify-content: left;
+        width: 70%;
+        height: 90%;
+        margin: auto -100px auto 20px;
+        z-index: 1;
+    }
+
+    #company-logo{
+        align-self: flex-start;
+    }
+
+    #we-are{
+        margin-top: 75px;
+        text-align: left;
+        width: inherit;
+
+    }
+
+    #coming-soon{
+        text-align: left;
+        width: inherit;
+    }
+    p{
+        margin-top: 25px;
+        text-align: left;
+        width: inherit;
+
+    }
+
+    .signup{
+        margin-top: 50px;
+        width: inherit;
+    }
+
+    .signup input{
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    #right-container{
+        width: inherit;
+        height: inherit;
+        background: #ffffff url("https://assets.codepen.io/6060109/athlete-big.png") no-repeat right top;
+        background-size: cover; 
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 25% 100%);
+        margin-left: -25px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
